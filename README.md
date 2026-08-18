@@ -20,6 +20,19 @@ The project is also packaged as `csvstat-py` and published on PyPI, allowing use
 * Packaged using `pyproject.toml`
 * Published on PyPI
 
+## Changes
+- Implemented csvstat CSV profiling CLI
+- Added pytest unit tests
+- Added package configuration using pyproject.toml
+- Packaged csvstat-py for PyPI
+- Added PyPI installation documentation
+- Updated README and project configuration
+
+## Testing
+- Pytest test suite
+- Verified package installation from PyPI
+- Verified csvstat CLI on Windows and Linux
+
 ## Installation
 
 ### Install from PyPI
