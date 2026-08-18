@@ -5,6 +5,11 @@ __pycache__/
 # Pytest
 .pytest_cache/
 
+# Coverage
+.coverage
+htmlcov/
+.coverage.*
+
 # Packaging
 *.egg-info/
 build/
@@ -14,9 +19,13 @@ dist/
 venv/
 .venv/
 env/
+testenv/
+package_test/
+test_install/
+
+# Environment variables
+.env
 
 # OS files
 .DS_Store
 Thumbs.db
-
-testenv/

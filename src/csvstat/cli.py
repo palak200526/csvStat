@@ -2,7 +2,7 @@ import argparse
 import csv
 from collections import Counter
 
-from src.csvstat.profiler import infer_type, numeric_stats
+from csvstat.profiler import infer_type, numeric_stats
 
 def main():
     parser = argparse.ArgumentParser(
