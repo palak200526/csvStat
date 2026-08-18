@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "csvstat"
+name = "csvstat-py"
 version = "0.1.0"
 description = "A lightweight command-line CSV data profiling tool"
 readme = "README.md"
@@ -18,4 +18,4 @@ authors = [
 csvstat = "csvstat.cli:main"
 
 [tool.setuptools.packages.find]
-where = ["src"]
+where = ["src"] 
