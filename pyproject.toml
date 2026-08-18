@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csvstat"
+version = "0.1.0"
+description = "A lightweight command-line CSV data profiling tool"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+
+authors = [
+    {name = "Palak Grover"}
+]
+
+[project.scripts]
+csvstat = "csvstat.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
