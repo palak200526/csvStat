@@ -1,8 +1,10 @@
+"""Functions for CSV data profiling and type inference."""
+
 import argparse
 import csv
 from collections import Counter
 
-from csvstat.profiler import infer_type, numeric_stats
+from src.csvstat.profiler import infer_type, numeric_stats
 
 def main():
     parser = argparse.ArgumentParser(
