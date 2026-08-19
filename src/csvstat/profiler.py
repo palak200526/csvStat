@@ -1,4 +1,7 @@
 from datetime import datetime
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 def is_numeric(value):
@@ -7,6 +10,8 @@ def is_numeric(value):
         float(value)
         return True
     except ValueError:
+
+        logger.debug("Value '%s' is not numeric.", value)
         return False
 
 
@@ -23,6 +28,11 @@ def is_date(value):
             datetime.strptime(value, date_format)
             return True
         except ValueError:
+            logger.debug(
+                "Value '%s' does not match date format '%s'.",
+                value,
+                date_format
+            )
             continue
 
     return False

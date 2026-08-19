@@ -1,3 +1,5 @@
+"""Functions for CSV data profiling and type inference."""
+
 import argparse
 import csv
 from collections import Counter
