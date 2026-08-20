@@ -6,6 +6,8 @@ A lightweight command-line CSV data profiling tool built with Python.
 
 `csvstat` is a command-line tool that analyzes CSV files and provides useful profiling information about the dataset, including column types, missing values, numerical statistics, and frequent values.
 
+The project is also packaged as `csvstat-py` and published on PyPI, allowing users to install and use it directly with `pip`.
+
 ## Features
 
 * Detects numeric, date, and text columns
@@ -16,8 +18,38 @@ A lightweight command-line CSV data profiling tool built with Python.
 * Supports configurable top-N values
 * Includes comprehensive `pytest` unit tests
 * Packaged using `pyproject.toml`
+* Published on PyPI
+
+## Changes
+- Implemented csvstat CSV profiling CLI
+- Added pytest unit tests
+- Added package configuration using pyproject.toml
+- Packaged csvstat-py for PyPI
+- Added PyPI installation documentation
+- Updated README and project configuration
+
+## Testing
+- Pytest test suite
+- Verified package installation from PyPI
+- Verified csvstat CLI on Windows and Linux
 
 ## Installation
+
+### Install from PyPI
+
+The easiest way to install `csvstat` is directly from PyPI:
+
+```bash
+python -m pip install csvstat-py
+```
+
+After installation, verify it:
+
+```bash
+csvstat --help
+```
+
+### Install from Source
 
 Clone the repository:
 
@@ -26,7 +58,7 @@ git clone https://github.com/palak200526/csvStat.git
 cd csvStat
 ```
 
-Install the package:
+Install the package locally:
 
 ```bash
 python -m pip install -e .
@@ -54,7 +86,9 @@ csvstat tests/data/sample.csv --top 3
 
 ```text
 CSV file: tests/data/sample.csv
+
 Rows: 10
+
 Columns: 7
 
 Age:
@@ -106,6 +140,7 @@ csvStat/
 │   └── test_profiler.py
 ├── pyproject.toml
 ├── README.md
+├── PACKAGE.md
 ├── LICENSE
 └── .gitignore
 ```
@@ -114,10 +149,25 @@ csvStat/
 
 The project is configured as a Python package using `pyproject.toml`.
 
+### Local Installation
+
 Install the package locally with:
 
 ```bash
 python -m pip install -e .
+```
+
+### PyPI Installation
+
+The package is published on PyPI as:
+
+* **Package:** `csvstat-py`
+* **Version:** `0.1.4`
+
+Install it using:
+
+```bash
+python -m pip install csvstat-py
 ```
 
 After installation, the `csvstat` command can be used directly from the terminal:
@@ -125,6 +175,18 @@ After installation, the `csvstat` command can be used directly from the terminal
 ```bash
 csvstat tests/data/sample.csv
 ```
+
+## PyPI
+
+The package is available on PyPI:
+
+https://pypi.org/project/csvstat-py/
+
+## Source Code
+
+The source code is available on GitHub:
+
+https://github.com/palak200526/csvStat
 
 ## License
 
